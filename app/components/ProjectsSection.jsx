@@ -84,9 +84,10 @@ const ProjectsSection = () => {
             // initial="initial"
             // animate={isInView ? "animate" : "initial"}
             // transition={{ duration: 0.3, delay: index * 0.4 }}
+            key={project.id}
           >
             <ProjectCard
-              key={project.id}
+              
               title={project.title}
               description={project.description}
               imgUrl={project.image}
